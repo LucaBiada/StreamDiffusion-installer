@@ -37,9 +37,9 @@ MANUAL_PINS = {
 # Pre-built insightface wheels for Windows (PyPI has no Windows wheels, requires C++ build tools)
 # Source: https://github.com/Gourieff/Assets
 INSIGHTFACE_WHEELS = {
-    (3, 10): "https://github.com/Gourieff/Assets/raw/main/Insightface/insightface-0.7.3-cp310-cp310-win_amd64.whl",
-    (3, 11): "https://github.com/Gourieff/Assets/raw/main/Insightface/insightface-0.7.3-cp311-cp311-win_amd64.whl",
-    (3, 12): "https://github.com/Gourieff/Assets/raw/main/Insightface/insightface-0.7.3-cp312-cp312-win_amd64.whl",
+    (3, 10): "https://github.com/LucaBiada/Assets/raw/main/Insightface/insightface-0.7.3-cp310-cp310-win_amd64.whl",
+    (3, 11): "https://github.com/LucaBiada/Assets/raw/main/Insightface/insightface-0.7.3-cp311-cp311-win_amd64.whl",
+    (3, 12): "https://github.com/LucaBiada/Assets/raw/main/Insightface/insightface-0.7.3-cp312-cp312-win_amd64.whl",
 }
 
 # stringzilla 5.1.2 (latest; pulled in transitively via insightface -> albumentations ->
@@ -61,7 +61,7 @@ CUDA_LINK_WHEELS = {
     (
         3,
         11,
-    ): "https://github.com/forkni/cuda-link/releases/download/v1.12.2/cuda_link-1.12.2-cp311-cp311-win_amd64.whl",
+    ): "https://github.com/LucaBiada/cuda-link/releases/download/v1.12.2/cuda_link-1.12.2-cp311-cp311-win_amd64.whl",
 }
 
 # PyTorch configurations by CUDA version
@@ -407,7 +407,7 @@ class Installer:
             [
                 "--force-reinstall",
                 "--no-deps",
-                "diffusers @ git+https://github.com/varshith15/diffusers.git@3e3b72f557e91546894340edabc845e894f00922",
+                "diffusers @ git+https://github.com/LucaBiada/diffusers.git@3e3b72f557e91546894340edabc845e894f00922",
             ]
         )
 
